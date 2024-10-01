@@ -146,11 +146,11 @@ let texto = "javascript é incrível";
 let palavras = texto.split(" ");
 let palavrasInvertidas = palavras.reverse();
 
-let resultado = palavrasInvertidas.map(palavra => 
-    palavra[0].toUpperCase() + palavra.slice(1)
+let resultado = palavrasInvertidas.map(palavra =>
+  palavra.charAt(0).toUpperCase() + palavra.slice(1)
 ).join(" ");
 
-console.log(resultado);
+console.log("Texto resultante:", resultado);
 
 
 // QUESTÃO 13
